@@ -1,0 +1,96 @@
+% !TEX TS-program = XeLaTeX
+%%%%%%%%%% 使用 XeLaTeX 编译 %%%%%%%%%%
+% Github: https://github.com/GrokCV/Nankai-Letter
+% Authot: Yimian Dai
+% Modified from [HFUT_Letter](https://github.com/HFUTTUG/HFUT_Letter)
+
+\PassOptionsToPackage{quiet}{fontspec}
+\documentclass[12pt,letterpaper]{letter} 
+\usepackage[fontset=fandol]{ctex}
+\usepackage[hidelinks]{hyperref}
+\usepackage{color}
+\usepackage{wallpaper}
+\usepackage{graphicx}
+\usepackage{parskip} 
+\usepackage{geometry} 
+\usepackage{fancyhdr} % for fancy headers
+\usepackage{lastpage} 
+\usepackage{indentfirst} 
+\setlength{\parindent}{2em}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+
+\fancyhead{} % footer for pages 2 on
+%\lfoot{\footnotesize {}} % 左脚注
+\cfoot{} % Change for center footer
+%\rfoot{\footnotesize \thepage\ / \pageref{LastPage}} % 右脚注：页码 
+
+\renewcommand{\footrulewidth}{0pt}
+
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+% \definecolor{nuaablue}{RGB}{29, 32, 136}
+\definecolor{nkupurple}{RGB}{113, 26, 95}
+\topmargin=-1.1in 
+\textheight=9.5in 
+\oddsidemargin=-10pt 
+\textwidth=7in % Text width
+%\let\raggedleft\raggedright % Makes the date appear on the left
+% \CenterWallPaper{0.5}{nuaa_bg.pdf} %信纸背景
+\def\topnote{
+    \begin{center}
+        \begin{picture}(1000,1)
+            \put(0,-20){\includegraphics[width=.5\textwidth]{nankai-logo.pdf}}
+            % \put(300,33){\textcolor{nuaablue}{\footnotesize 地址：江苏省南京市江宁区将军大道29号} }
+            \put(300,22){\textcolor{nkupurple}{\footnotesize 地址：天津市津南区海河教育园区同砚路 38 号} }
+            \put(300,11){\textcolor{nkupurple}{\footnotesize 邮编：300071} }
+            \put(300,00){\textcolor{nkupurple}{\footnotesize 电话：(+86) 22-85358190} }
+            % \put(300,00){\textcolor{nuaablue}{\footnotesize 邮箱：\href{mailto:nuaacem@nuaa.edu.cn}{nuaacem@nuaa.edu.cn} } }
+            % \put(300,-11){\textcolor{nuaablue}{ \footnotesize 主页：\href{http://cem.nuaa.edu.cn/main.htm}{http://nuaa.edu.cn/} }}
+            \put(0,-28){\textcolor{nkupurple}{\rule{\textwidth}{1.2pt}}}
+        \end{picture}
+    \end{center}
+    \vspace{10mm}
+}
+
+\begin{document}
+
+\topnote %信纸抬头
+
+% \noindent 尊敬的南开大学计算机学院领导：
+\begin{center}
+    \textbf{\Large 推荐信}
+\end{center}
+
+% \small
+% \normalsize
+% 第一个参数 12pt 是字体大小，第二个参数 14pt 是行距大小。
+\fontsize{14pt}{17pt}\selectfont
+
+\kaishu
+
+bala bala
+
+\vspace{6\baselineskip}
+
+bala bala
+
+\vspace{6\baselineskip}
+
+bala bala
+
+\vspace{6\baselineskip}
+
+\begin{flushright}
+\begin{tabular}{rl}
+南开大学&某某学院教授\\ 
+% 插入电子签名
+ &  \\
+& \\
+日期：& \today
+% & \today
+\end{tabular}
+\end{flushright}
+
+
+\end{document}

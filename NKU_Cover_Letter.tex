@@ -1,0 +1,128 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Long letter 南开大学版 NKU Version
+% Version 1.0 (2024-04-01)
+
+% This template was revised by Yimian Dai (yimian.dai@gmail.com) based on Ming Wang's  [NEU cover_Letter Template 东北大学投稿信模板](https://www.overleaf.com/latex/templates/neu-cover-letter-template-dong-bei-da-xue-tou-gao-xin-mo-ban/zdfjgwmhcbrh)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS 文档基础配置
+%----------------------------------------------------------------------------------------
+
+\documentclass{article}
+\usepackage{hyperref}
+\usepackage{charter} % Use the Charter font
+
+\usepackage[
+	a4paper, % Paper size
+	top=1in, % Top margin
+	bottom=1in, % Bottom margin
+	left=1in, % Left margin
+	right=1in, % Right margin
+	%showframe % Uncomment to show frames around the margins for debugging purposes
+]{geometry}
+
+\setlength{\parindent}{0pt} % Paragraph indentation
+\setlength{\parskip}{1em} % Vertical space between paragraphs
+
+\usepackage{graphicx} % Required for including images
+
+\usepackage{fancyhdr} % Required for customizing headers and footers
+
+\fancypagestyle{firstpage}{%
+	\fancyhf{} % Clear default headers/footers
+	\renewcommand{\headrulewidth}{0pt} % No header rule
+	\renewcommand{\footrulewidth}{1pt} % Footer rule thickness
+}
+
+\fancypagestyle{subsequentpages}{%
+	\fancyhf{} % Clear default headers/footers
+	\renewcommand{\headrulewidth}{1pt} % Header rule thickness
+	\renewcommand{\footrulewidth}{1pt} % Footer rule thickness
+}
+
+\AtBeginDocument{\thispagestyle{firstpage}} % Use the first page headers/footers style on the first page
+\pagestyle{subsequentpages} % Use the subsequent pages headers/footers style on subsequent pages
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	FIRST PAGE HEADER
+%----------------------------------------------------------------------------------------
+
+\includegraphics[width=0.35\textwidth]{nankai-logo.pdf} % Logo
+
+\vspace{-1em} % Pull the rule closer to the logo
+
+\rule{\linewidth}{1pt} % Horizontal rule
+
+\bigskip\bigskip % Vertical whitespace
+
+%----------------------------------------------------------------------------------------
+%	YOUR NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\hfill
+\begin{tabular}{l @{}}
+\hfill \today \bigskip\\ % Date
+\hfill John Doe \\
+\hfill Email: john.doe@nankai.edu.cn \\
+\hfill 94 Weijin Road, Nankai District\\
+\hfill Tianjin, P.R.China 300071 \\ % Address
+\end{tabular}
+
+% , 
+
+\bigskip % Vertical whitespace
+
+%----------------------------------------------------------------------------------------
+%	ADDRESSEE AND GREETING
+%----------------------------------------------------------------------------------------
+
+% TGRS: IEEE Transactions on Geoscience and Remote Sensing
+% https://www.grss-ieee.org/publications/author-resources/tgrs-editorial-board/
+% 
+% TAES: IEEE Transactions on Aerospace and Electronic Systems
+% Professor Gokhan Inalhan
+% https://ieee-aess.org/position/taes-eic
+% 
+\begin{tabular}{@{} l}
+	TGRS Editorial Board \\
+	\textit{IEEE Transactions on Geoscience and Remote Sensing}
+\end{tabular}
+
+\bigskip % Vertical whitespace
+
+Dear Editor,
+
+\bigskip % Vertical whitespace
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+
+I am writing to submit our manuscript titled ``bala bala'' for consideration as a regular article in \textit{bala bala}. We confirm that this work is original and has not been published elsewhere, nor is it currently under consideration for publication elsewhere. All co-authors have read the manuscript and agreed to submit it in your journal.
+
+bala bala
+
+\vspace{6\baselineskip}
+
+bala bala
+
+\vspace{6\baselineskip}
+
+Thank you for reviewing our manuscript. If you require any further information or have any questions, please do not hesitate to contact us.
+
+\bigskip % Vertical whitespace
+
+Sincerely yours,
+
+\vspace{20pt} % Vertical whitespace
+
+John Doe \\
+College of Bala Bala \\
+Nankai University \\
+
+\end{document}
